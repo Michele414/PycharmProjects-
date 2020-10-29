@@ -19,7 +19,6 @@ class transaçao (models.Model):
 
 class meta:
     verbose_name_plural='transaçoes'
-    def __str__(self):
-        return self. descriçao
+   
 
        

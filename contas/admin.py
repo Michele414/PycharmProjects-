@@ -5,4 +5,5 @@ from .models import transaçao
 
 # Register your models here.
 
-admin.site.Register(categoria)
+admin.site.register(categoria)
+admin.site.register(transaçao)

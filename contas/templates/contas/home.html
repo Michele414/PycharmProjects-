@@ -8,6 +8,19 @@
 </head>
 <body>
    <h1>Seja bem vindo!</h1> 
+
+  
+
+  <ul>
+      {% for transaçao in transaçaoes % }
+         {% if transaçao == "t1" %}
+         <li><b>[{transaçoes}]</b></li>
+         {%else}
+         <li>[{transaçoes}]</li>
+         {% endif %}
+     {% endfor %}
+
+</ul>
    
 </body>
 </html>

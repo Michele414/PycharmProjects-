@@ -6,16 +6,20 @@
     <title>Document</title>
 </head>
 <body>
+
     <h2>Listagem</h2>
+
     <ul>
     (% for transaçao in transaçoes %)
+    <li><a href="{% url'url_update'transaçao.id %}"></a>{{transaçao.descriçao - {{transiçao.data}} - 
+        {{transaçao.valor}} - {{transaçao.categoria}} </li>
 
-    <li>{{transaçao.descriçao}} - {{transaçao.data}} - {{transaçao.valor}}</li>
+    </li>
+       
     (% endfor %)
-
-
 </ul>
     
+<a href="{% url'url_nova' %}">novo</a>
     
 </body>
 </html>

@@ -3,9 +3,11 @@ from django.db import models
 
 # Create your models here.
 
+
 class categoria(models.Model):
     nome=models.CharField(max_length=100)
     dt_criaçao = models.DateTimeField(auto_now_add=True)
+   
     def __str__(self):
         return self.nome
 
@@ -17,8 +19,11 @@ class transaçao (models.Model):
     categoria= models.ForeignKey(categoria,on_delete=models.CASCADE)
     observaçoes=models.TextField()
 
-class meta:
-    verbose_name_plural='transaçoes'
+    class meta:
+        verbose_name_plural='transaçoes'
+
+    def __str__(self):
+        return self.descriçao
    
 
        

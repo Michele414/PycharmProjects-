@@ -1,9 +1,9 @@
 from django.forms import ModelForm
-from .models import transaçao
+from .models import Transacao
 
 
 
-class transaçaoForm (ModelForm):
+class TransacaoForm(ModelForm):
   class meta:
-    model = transaçao
-    fields = ['data','desscriçao','valor','observaçoes','categoria']
+    model = Transacao
+    fields = ['data','descricao','valor','observacoes','categoria']

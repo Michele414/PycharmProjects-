@@ -9,19 +9,19 @@ Function views
 Class-based views
     1. Add an import:  from other_app.views import Home
     2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
-Including another URLconf
+Including another URL conf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
 from django.urls import path
-from contas.views import home, listagem, nova ,update,delete
+from contas.views import home, listagem, nova , update, delete
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',listagem,name = 'url_listagem'),
-    path('nova',nova,name='url_nova'),
-    path('update/<int:pk>/',update,name='url_update'),
-    path('update/<int:pk>/',update,name='url_delete'),
-    path('home',home),
-]
+    path('', listagem, name='url_listagem'),
+    path('nova', nova, name='url_nova'),
+    path('update/<int:pk>/', update, name='url_update'),
+    path('update/<int:pk>/', update, name='url_delete'),
+    path('home', home),
+ ]
